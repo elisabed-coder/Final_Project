@@ -1,0 +1,90 @@
+.footer-container {
+  background-color: #011a41;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 57px 20px;
+}
+
+.footer-container h2 {
+  color: #ffffff;
+  font-weight: 700px;
+  font-size: 24px;
+}
+
+.footer-container ul {
+  margin-top: 11px;
+  list-style-type: none;
+}
+
+.footer-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  transition: all 0.4s ease;
+}
+.footer-container a:hover {
+  padding-left: 10px;
+  color: #355efc;
+}
+
+.footer-container ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-logos {
+  margin-top: 10px;
+}
+
+.copyrightText {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 25px 75px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.sec-contact p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  width: 282px;
+  margin-top: 11px;
+}
+
+.newsletter-form {
+  width: 262px;
+  position: relative;
+  margin-top: 11px;
+}
+.newsletter-form input {
+  padding: 15px 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+.sign-up-button {
+  font-size: 16px;
+  font-weight: 400;
+  height: 37px;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #355efc;
+  position: absolute;
+  right: 0;
+  border: none;
+  top: calc(50% - 37px / 2);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.sign-up-button:hover {
+  background-color: #011a41;
+  font-size: 18px;
+}

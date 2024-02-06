@@ -1,0 +1,177 @@
+@media screen and (max-width: 1200px) {
+  .nav-bar .logo {
+    display: block;
+    position: absolute;
+    left: 5%;
+  }
+  .icons {
+    display: inline-flex;
+    position: absolute;
+    right: 5%;
+  }
+  .header-main-content {
+    padding-top: 2%;
+  }
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  .icons #close-icon {
+    display: none;
+  }
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #ffffff;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: absolute;
+    /* z-index: 10000; */
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-evenly;
+    padding-top: 2.5rem;
+  }
+
+  .nav-page-section img {
+    display: none;
+  }
+
+  #check:checked ~ nav {
+    display: block;
+    height: 17.7rem;
+    z-index: 10000;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 10%;
+  }
+  .navbar-logos {
+    display: none;
+  }
+  .header-info-bar {
+    display: none;
+  }
+  .main-headers h1 {
+    font-size: 40px;
+  }
+
+  .service-section-first-cmn {
+    flex-wrap: wrap;
+  }
+
+  .service-section img {
+    width: 100%;
+  }
+  .why-choosing-us-section {
+    flex-direction: column;
+  }
+
+  .why-choosing-us-right-side {
+    margin-top: 50px;
+  }
+  .financial-planning-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-experience {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  footer {
+    width: 100%;
+  }
+
+  .footer-container {
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .copyrightText {
+    padding: 25px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newsletter-form {
+    width: 200px;
+  }
+  .sec-contact p {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .statistic-section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .statistic-section-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-profits-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-columns-first,
+  .service-columns-second {
+    border-bottom: 1px solid #909de2;
+    border-right: none;
+  }
+
+  .why-choosing-us-section > div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .why-choosing-us-section h3,
+  .why-choosing-us-section p,
+  .our-services-wrapper h2 {
+    max-width: 300px;
+  }
+
+  .input-form-container {
+    width: 100%;
+    left: 0;
+  }
+  .input-form-container h2 {
+    text-align: center;
+  }
+  .input-form {
+    width: 100%;
+  }
+  .inputBox span {
+    font-size: 14px;
+  }
+
+  .input-row {
+    flex-wrap: wrap;
+  }
+
+  .footer-container {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+  .service-section-buttons button:last-child {
+    display: none;
+  }
+}
