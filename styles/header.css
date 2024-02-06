@@ -40,23 +40,32 @@ header {
   border-bottom: 1px solid#CAD2FC;
   padding: 31px 72px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.11);
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .header-info-bar p {
   font-weight: 400;
   font-size: 14px;
   color: #355efc;
 }
+.header-info-bar i {
+  color: #355efc;
+}
 
-.header-info-bar div {
+.header-info-bar > div {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.header-info-bar img {
-  margin-right: 10px;
+.header-info-bar > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
-.header-info-bar img:not(:first-child) {
-  margin-left: 30px;
-}
 .header-main-content {
   margin: auto;
   padding: 0 48px;
@@ -161,6 +170,23 @@ nav a.active {
   cursor: pointer;
   transition: all 0.4s ease;
 }
+#explore-more-information {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  z-index: 200000;
+  padding: 20px;
+  font-size: 18px;
+  overflow-y: auto;
+}
+
+#explore-more-information i {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
 
 .explore-more-button:hover {
   background-color: #051452;
@@ -185,10 +211,10 @@ nav a.active {
 }
 
 .slider-img {
-  width: 853px;
+  max-width: 853px;
   object-fit: cover;
   height: 550px;
-  background-color: inherit;
+  background-color: transparent;
 }
 #check {
   display: none;

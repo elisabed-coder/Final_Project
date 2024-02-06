@@ -36,7 +36,6 @@
   font-weight: 400px;
   font-size: 16px;
   border-radius: 11px;
-  cursor: pointer;
   border: 1px solid #cad2fc;
   margin-top: 50px;
   box-shadow: 0px 0px 4px 0px #0000005c;
@@ -45,7 +44,6 @@
 .get-in-touch-button:hover {
   background-color: #355efc;
   color: #ffffff;
-  padding: 12px 18px;
 }
 
 .input-form-container h2 {
@@ -116,11 +114,9 @@ textarea {
   font-size: 16px;
   font-weight: 700;
   color: #f5f5f5;
-  cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .submit-now-button:hover {
-  font-size: 18px;
   background-color: #051452;
 }

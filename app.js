@@ -59,3 +59,22 @@ function changeText() {
 }
 
 changeText();
+
+let exploreMoreButton = document.getElementById("explore-more");
+let exploreInforamtion = document.getElementById("explore-more-information");
+let informationText = exploreInforamtion.querySelector("p");
+let closeText = exploreInforamtion.querySelector("i");
+
+informationText.textContent = `The mission and institutional tasks of Guardia di Finanza are stated in the law 189 of April 23, 1959, and 68/2001 and are subdivided into priority ones (preventing, investigating and reporting financial evasions and violations, overseeing the compliance with the provisions of politico-economic interest and surveillance at sea for financial police purposes) and contribution ones (maintaining public order and safety and political-military defense of the borders).
+
+The primary mission of the Guardia di Finanza is to protect the legal economy and the businesses operating in compliance with the law, while ensuring that the Republic, the European Union, the regions, and the local governments can rely on a regular income and appropriate use of the resources meant for the community, and for supporting policies for economic and social revival and development.
+
+Its activities are connected with financial, economic, judiciary and public safety: tax evasion, financial crimes, smuggling, money laundering, international illegal drug trafficking, illegal immigration, human trafficking, modern slavery, customs and borders checks, copyright violations, anti-Mafia operations, credit card fraud, cybercrime, counterfeiting currency, terrorist financing, maintaining public order, and safety, political and military defense of the Italian borders.`;
+
+exploreMoreButton.addEventListener("click", function () {
+  exploreInforamtion.style.display = "block";
+});
+
+closeText.addEventListener("click", function () {
+  exploreInforamtion.style.display = "none";
+});

@@ -201,10 +201,10 @@
 .why-choosing-us-right-side {
   gap: 15px;
 }
-.why-choosing-us-right-side div div {
+/* .why-choosing-us-right-side div div {
   max-width: 258px;
-  height: 265px;
-}
+  min-height: 265px;
+} */
 .fast-execution-boxes {
   display: flex;
   flex-direction: column;
@@ -228,7 +228,7 @@
 
 .fast-execution-white-box {
   max-width: 260px;
-  height: 265px;
+  min-height: 265px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -279,7 +279,6 @@
   background-color: inherit;
   border: none;
   color: #355efc;
-  cursor: pointer;
 }
 
 /* .our-services-section */
@@ -305,7 +304,6 @@
   font-weight: 400px;
   font-size: 16px;
   color: #355efc;
-  cursor: pointer;
 }
 .our-services-wrapper h2 {
   font: weight 700px;
@@ -407,4 +405,24 @@
 .financial-planning-rows div:hover .menu-icon-p,
 .financial-planning-rows div:hover p {
   color: white;
+}
+
+.fast-execution-white-box {
+  animation: spinner 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

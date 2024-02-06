@@ -12,6 +12,13 @@
   .header-main-content {
     padding-top: 2%;
   }
+  .header-info-bar {
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   #check:checked ~ .icons #menu-icon {
     display: none;
   }
@@ -61,7 +68,6 @@
     display: none;
   }
   .header-info-bar {
-    display: none;
   }
   .main-headers h1 {
     font-size: 40px;
@@ -117,6 +123,21 @@
 @media screen and (max-width: 680px) {
   .statistic-section-wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .why-choosing-us-section h3,
+  .service-section-headers h3,
+  .services-wrapper h2 {
+    font-size: 30px;
+    line-height: 30px;
+
+    width: 100%;
+  }
+  .service-section-headers {
+    align-items: center;
+    text-align: center;
+  }
+  .slider-img {
+    max-width: 300px;
   }
 }
 
