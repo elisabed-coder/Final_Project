@@ -1,4 +1,7 @@
 @media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav-bar .logo {
     display: block;
     position: absolute;
@@ -30,7 +33,7 @@
   }
   nav {
     position: absolute;
-    top: 15%;
+    top: 17%;
     left: 0;
     width: 100%;
     height: 0;
@@ -67,8 +70,7 @@
   .navbar-logos {
     display: none;
   }
-  .header-info-bar {
-  }
+
   .main-headers h1 {
     font-size: 40px;
   }
@@ -121,8 +123,13 @@
 }
 
 @media screen and (max-width: 680px) {
-  .statistic-section-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+  nav {
+    top: 20%;
+  }
+  .service-section,
+  .why-choosing-us-section,
+  .contact-form-section {
+    margin-top: 20px;
   }
   .why-choosing-us-section h3,
   .service-section-headers h3,
@@ -194,5 +201,25 @@
   }
   .service-section-buttons button:last-child {
     display: none;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  nav {
+    top: 25%;
+  }
+  .statistic-section-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .slider-img {
+    max-height: 280px;
+  }
+  .our-services-wrapper h2,
+  .service-experience h3 {
+    font-size: 22px;
+  }
+  .service-experience > p {
+    font-size: 18px;
+    max-width: 250px;
   }
 }

@@ -1,26 +1,35 @@
 let slider_img = document.querySelector(".slider-img");
 let images = [
   "slider-image-card (5).png",
-  "slider-3-last.jpg",
-  "slider-img-200.avif",
+  "the-office-jim-halpert-removebg-preview.png",
+  "theoffice-removebg-preview.png",
 ];
 let i = 0;
+let intervalId;
 
 function prev() {
-  if (i <= 0) i = images.length;
-  i--;
+  i = (i - 1 + images.length) % images.length;
   return setImg();
 }
 
 function next() {
-  if (i >= images.length - 1) i = -1;
-  i++;
+  i = (i + 1) % images.length;
   return setImg();
 }
 
 function setImg() {
   return slider_img.setAttribute("src", "images/" + images[i]);
 }
+
+function startSlider() {
+  intervalId = setInterval(next, 3000); // Change image every 3 seconds
+}
+
+function stopSlider() {
+  clearInterval(intervalId);
+}
+
+startSlider();
 
 function changeText() {
   let story_button = document.getElementById("story-button");
